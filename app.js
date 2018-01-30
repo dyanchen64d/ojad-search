@@ -32,7 +32,7 @@ function getWordsJSON (qs) {
             } else if (tdclass === 'visible') {
               //
             } else {
-              _word[tdclass] = $(td).find('.accented_word').text()
+              _word[tdclass] = $(td).children().first().find('.accented_word').text()
             }
           })
 
